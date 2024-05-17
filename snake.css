@@ -1,18 +1,23 @@
 body {
-  /* height: 100vh; */
+ 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  background-color: plum;
 }
 
+
 .snake_board {
-  /* width: 70%; */
+  
 
   display: grid;
+ 
+ background-image: url('/Untitled\ design\ \(1\).png');
 
-  grid-template-columns: repeat(1, 800px);
+ background-size: cover;
+  grid-template-columns: repeat(1, 530px);
   grid-template-rows: repeat(10 , 53px);
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* transform: rotate(360deg); */
   transform: scaleY(-1);
   grid-auto-flow: row-reverse; /* Change the flow direction */
@@ -27,17 +32,27 @@ body {
     justify-content: center;
     border: 1px solid blue;
 }
+
+.play1{
+ 
+  transform: rotate(180deg);
+  font-size: medium;
+}
+.play2{
+  transform: rotate(180deg);
+  font-size: medium;
+}
 .row-container{
-  width: 800px;
+  width: 530px;
   display: flex;
-  background:yellow;
+  /* background:yellow; */
   color: black;
 }
 .row-container2{
-  width: 800px;
+  width: 530px;
   display: flex; 
    transform: scaleX(-1);
-  background:yellow;
+  /* background:yellow; */
   color: black;
 }
 
